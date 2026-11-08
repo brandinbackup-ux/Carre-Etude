@@ -1,0 +1,16 @@
+CARRÉ ÉTUDE MAROC — INTERSERVER STATIC
+
+1. Back up the existing domain document root and database if applicable.
+2. Upload the CONTENTS of public_html/ to the domain's document root (public_html or htdocs). Include .htaccess and _next/. Do not nest public_html inside the document root.
+3. Select PHP 8.1 or newer. No Node.js application, npm install, build command or running process is required on the server.
+4. The package uses https://carreetude.com in canonical URLs, structured data, sitemap and robots.txt. If publishing on another domain, replace that origin across the static files before upload.
+5. Contact form sends to contact@carreetude.com using PHP mail() and the hosting account's mail transport. Test actual inbox delivery after upload. If local mail is disabled or sender authentication fails, server mail configuration or an SMTP integration will be required. No email credentials are included.
+6. Test FR/EN, menus, project filters, sliders, contact success AND inbox receipt, mobile layout and old URL redirects. Enable SSL before switching traffic.
+7. Keep the previous site backup until these checks pass, then stop its old Node application if one exists.
+
+GitHub: public_html/ is the ready-to-host static repository content. Commit its contents, including .htaccess and _next/, to the chosen repository. No server build is needed. GitHub is not yet connected to InterServer by this package.
+
+BUILD CHECKS
+Static export and TypeScript passed. All FR/EN pages prerendered. Local asset references checked. PHP runtime and real email delivery were not tested because PHP and InterServer access are unavailable in this environment. No new browser or physical-device visual checks were performed.
+
+The existing ChatGPT-hosted preview was not changed; PHP requires the InterServer host.

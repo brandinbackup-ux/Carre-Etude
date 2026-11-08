@@ -1,0 +1,12 @@
+Options -Indexes
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+RewriteEngine On
+RewriteRule ^a-propos/?$ /bureau/ [R=301,L]
+RewriteRule ^portfolio/habitation-standing-cgi/?$ /projets/dar-laman/ [R=301,L]
+RewriteRule ^(en/)?projets/habitation-standing-cgi/?$ /$1projets/dar-laman/ [R=301,L]
+RewriteRule ^portfolio(?:/(.*))?/?$ /projets/$1 [R=301,L]
+RewriteRule ^structure/?$ /expertises/structure/ [R=301,L]
+RewriteRule ^cvc/?$ /expertises/fluides-cvc/ [R=301,L]
+RewriteRule ^vrd/?$ /expertises/vrd/ [R=301,L]
+RewriteRule ^opc/?$ /expertises/opc/ [R=301,L]
